@@ -38,7 +38,7 @@ LFELIPEM@MSN.COM
 
 
 Versão 2.0
-Março de 2016 
+Setembro de 2022
 INTRODUÇÃO
 
 O objetivo deste tutorial é ajudar novos usuários a instalar o modelo acoplado COAWST (desenvolvido por John Warner - USGS). A instalação garantirá que usuário possa rodar os casos teste e ter certeza que tudo está correto com a configuração do modelo.
@@ -91,9 +91,9 @@ perl –v
 
 1	cd ~/Programas
 
-2	wget http://www.zlib.net/zlib-1.2.8.tar.gz
+2	wget http://zlib.net/fossils/zlib-1.2.11.tar.gz
 
-3	tar -xvzf zlib-1.2.8.tar.gz
+3	tar -xvzf zlib-1.2.11.tar.gz
 
 4	cd zlib-1.2.8
 
@@ -106,9 +106,9 @@ perl –v
 
 9	cd ~/Programas
 
-10	wget ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-4/hdf5-1.8.9.tar.gz
+10	wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/hdf5-1.8.22/src/hdf5-1.8.22.tar.gz
 
-11	tar xzf hdf5-1.8.9.tar.gz
+11	tar xzf hdf5-1.8.22.tar.gz
 
 12	cd hdf5*
 
@@ -147,9 +147,6 @@ perl –v
 
 13	sudo make install
 
-
-
-
 Agora vamos instalar o MPI (Message Passing Interface) para poder usar o COAWST em paralelo. Eu escolhi utilizar o Open-MPI.
 
 1	cd /Programas
@@ -181,13 +178,15 @@ Gostaria de acrescentar que possuo algumas manias e atos que podem ser simplific
 
 Está etapa consiste em configurar o arquivo (.bashrc). Para os iniciantes em Linux o arquivo .bashrc é responsável por mostrar ao sistema raiz onde as pastas com os arquivos e bibliotecas serão chamados. O arquivo .bashrc encontra-se na pasta pessoal do usuário do Linux (Ex: /home/luis/.bashrc). Abrindo o arquivo no editor de texto do Linux (comando gedit .bashrc na sua pasta pessoal) deve abrir o arquivo de interesse. Desça ao fim do documento de texto e acrescente as seguintes linhas de comando:
 
-export MCT_INCDIR=/home/luis/COAWST/Lib/MCT/include export MCT_LIBDIR=/home/luis/COAWST/Lib/MCT/lib export NETCDF_INCDIR=/usr/local/include
+export MCT_INCDIR=/home/luis/COAWST/Lib/MCT/include 
+export MCT_LIBDIR=/home/luis/COAWST/Lib/MCT/lib 
+export NETCDF_INCDIR=/usr/local/include
+export NETCDF_LIBDIR=/usr/local/lib 
+export PATH=$PATH:/usr/local/bin 
+export NETCDF=/usr/local
 
-export NETCDF_LIBDIR=/usr/local/lib export PATH=$PATH:/usr/local/bin export NETCDF=/usr/local
-
-export JASPERLIB=/usr/local/lib export JASPERINC=/usr/local/include export PHDF5=/usr/local
-
-export LD_LIBRARY_PATH="/usr/local/lib:/usr/local/lib/:${LD_LIBRARY_PATH}" export INCLUDE="/usr/local/include:/usr/local/include/:${INCLUDE}"
+export LD_LIBRARY_PATH="/usr/local/lib:/usr/local/lib/:${LD_LIBRARY_PATH}" 
+export INCLUDE="/usr/local/include:/usr/local/include/:${INCLUDE}"
 
 *****Lembre-se de mudar o nome da pais raiz, para a sua. (/home/luis/...)
 
