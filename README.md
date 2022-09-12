@@ -92,9 +92,13 @@ Instalando a biblioteca zlib:
 wget http://zlib.net/fossils/zlib-1.2.11.tar.gz
 
 tar -xvzf zlib-1.2.11.tar.gz
+
 cd zlib-1.2.8
+
 ./configure --prefix=/usr/local/
+
 make
+
 sudo make install
 
 Instalando a biblioteca hdf5:
@@ -102,19 +106,28 @@ Instalando a biblioteca hdf5:
 wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/hdf5-1.8.22/src/hdf5-1.8.22.tar.gz
 
 tar xzf hdf5-1.8.22.tar.gz
+
 cd hdf5*
+
 ./configure --with-zlib=/usr/local --prefix=/usr/local
+
 make check install
+
 sudo make install
+
 
 Agora instale o netcdf para C e depois para fortran:
 
 wget http://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-4.4.0.tar.gz
 
 tar xzf netcdf-4.4.0.tar.gz
+
 cd netcdf*
+
 ./configure --prefix=/usr/local
+
 make check
+
 sudo make install
 
 Instalação netcdf Fortran
@@ -122,8 +135,11 @@ Instalação netcdf Fortran
 wget http://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-fortran-4.4.3.tar.gz
 
 tar xzf netcdf-fortran-4.4.3.tar.gz
+
 cd netcdf-fortran-4.4.3/
+
 ./configure --prefix=/usr/local
+
 sudo make install
 
 Agora vamos instalar o MPI (Message Passing Interface) para poder usar o COAWST em paralelo. Eu escolhi utilizar o Open-MPI.
@@ -131,8 +147,11 @@ Agora vamos instalar o MPI (Message Passing Interface) para poder usar o COAWST 
 wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.4.tar.gz
 
 tar xvzf openmpi-1.10.1.tar.gz
+
 cd openmpi-1.10.1
+
 ./configure –prefix=/usr/local
+
 sudo make install
 
 Se tudo deu certo até agora, vamos baixar a última versão do COAWST usando o subversion, mas para isso você precisa de uma conta no COAWST. Para adquiri-la mande um e-mail para (jcwarner@usgs.gov). Ao usar o svn será necessário usar seu usuário e senha. Escolha um local a seu gosto para instalar o COAWST. Minha dica é um ambiente que não necessite ROOT e seja de fácil acesso (ex: /home/luis/COAWST).
