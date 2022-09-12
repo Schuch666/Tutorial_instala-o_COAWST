@@ -118,7 +118,7 @@ sudo make install
 
 Agora instale o netcdf para C e depois para fortran:
 
-wget http://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-4.4.0.tar.gz
+wget https://downloads.unidata.ucar.edu/netcdf-c/4.9.0/netcdf-c-4.9.0.tar.gz
 
 tar xzf netcdf-4.4.0.tar.gz
 
@@ -132,7 +132,7 @@ sudo make install
 
 Instalação netcdf Fortran
 
-wget http://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-fortran-4.4.3.tar.gz
+wget https://downloads.unidata.ucar.edu/netcdf-fortran/4.6.0/netcdf-fortran-4.6.0.tar.gz
 
 tar xzf netcdf-fortran-4.4.3.tar.gz
 
