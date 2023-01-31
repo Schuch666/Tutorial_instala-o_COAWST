@@ -146,11 +146,11 @@ Agora vamos instalar o MPI (Message Passing Interface) para poder usar o COAWST 
 
 wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.4.tar.gz
 
-tar xvzf openmpi-1.10.1.tar.gz
+tar xvzf openmpi-4.1.4.tar.gz
 
-cd openmpi-1.10.1
+cd openmpi-4.1.4
 
-./configure –prefix=/usr/local
+./configure --prefix=/usr/local
 
 sudo make install
 
