@@ -79,7 +79,7 @@ sudo apt-get install gfortran
 
 sudo apt-get install g++
 
-sudo apt-get m4
+sudo apt-get install m4
 
 # o make deve ser 3.8 ou mais recente
 make -v
