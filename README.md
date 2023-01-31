@@ -134,9 +134,9 @@ Instalação netcdf Fortran
 
 wget https://downloads.unidata.ucar.edu/netcdf-fortran/4.6.0/netcdf-fortran-4.6.0.tar.gz
 
-tar xzf netcdf-fortran-4.4.3.tar.gz
+tar xzf netcdf-fortran-4.6.0.tar.gz
 
-cd netcdf-fortran-4.4.3/
+cd netcdf-fortran-4.6.0/
 
 ./configure --prefix=/usr/local
 
