@@ -120,7 +120,7 @@ Agora instale o netcdf para C e depois para fortran:
 
 wget https://downloads.unidata.ucar.edu/netcdf-c/4.9.0/netcdf-c-4.9.0.tar.gz
 
-tar xzf netcdf-4.9.0.tar.gz
+tar xzf netcdf-c-4.9.0.tar.gz
 
 cd netcdf*
 
