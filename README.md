@@ -103,11 +103,11 @@ sudo make install
 
 Instalando a biblioteca hdf5:
 
-wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/hdf5-1.8.22/src/hdf5-1.8.22.tar.gz
+wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
 
-tar xzf hdf5-1.8.22.tar.gz
+tar xzf hdf5-1.14.0.tar.gz
 
-cd hdf5*
+cd hdf5-1.14.0/
 
 ./configure --with-zlib=/usr/local --prefix=/usr/local
 
