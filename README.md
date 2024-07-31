@@ -75,11 +75,27 @@ Começamos com o básico, abrindo o Terminal e instalado o subversion, gfortra, 
 
 sudo apt-get install subversion
 
-sudo apt-get install gfortran
-
 sudo apt-get install g++
 
 sudo apt-get install m4
+
+# Por questões práticas as versões do GCC, G++ e gfotran 9 são as mais estáveis para mim e não constuma dar problemas. Por esse motivos instalaremos está versão.
+
+sudo aptitude install gcc-9 g++-9 gfortran-9
+
+# Deixando gcc-9 como default
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 10
+sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
+sudo update-alternatives --set cc /usr/bin/gcc
+
+# Deixando g++-9 como default
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 10
+sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30
+sudo update-alternatives --set c++ /usr/bin/g++
+
+# Deixando gfortran-9 como default
+sudo update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-9 40 
+sudo update-alternatives --config gfortran
 
 # o make deve ser 3.8 ou mais recente
 make -v
