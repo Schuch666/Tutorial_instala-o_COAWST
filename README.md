@@ -168,6 +168,20 @@ cd openmpi-4.1.4
 
 sudo make install
 
+Instalação do Jasper
+
+wget http://www.ece.uvic.ca/~mdadams/jasper/software/jasper-1.900.1.zip
+
+unzip jasper-1.900.1.zip
+
+cd jasper-1.900.1.zip
+
+./configure --prefix=/usr/local
+
+make
+
+sudo make install
+
 Se tudo deu certo até agora, vamos baixar a última versão do COAWST usando o subversion, mas para isso você precisa de uma conta no COAWST. Para adquiri-la mande um e-mail para (jcwarner@usgs.gov). Ao usar o svn será necessário usar seu usuário e senha. Escolha um local a seu gosto para instalar o COAWST. Minha dica é um ambiente que não necessite ROOT e seja de fácil acesso (ex: /home/luis/COAWST).
 
 1	Download COAWST			
