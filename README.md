@@ -65,15 +65,15 @@ FALTARÁ.
 
 Bom, chega de papo e vamos começar. 
 
-#INSTALANDO OS COMPONENTES BÁSICOS
+# INSTALANDO OS COMPONENTES BÁSICOS
 
-Crie uma pasta /Programas no seu home, é lá que baixaremos e descompactaremos todos os programas. Execute o comando abaixo com o nome de origem do seu home.
+# Crie uma pasta /Programas no seu home, é lá que baixaremos e descompactaremos todos os programas. Execute o comando abaixo com o nome de origem do seu home.
 
 mkdir /home/luis/Programas
 
-Para que o COAWST funcione corretamente precisamos instalar os seguinte pacotes: subversion, gfortran, g++, M4, make (já vem no ubuntu), perl (também já vem instalado), zlib, hdf5, netcdf para C, netcdf para fortran e finalmente baixar o COAWST.
+# Para que o COAWST funcione corretamente precisamos instalar os seguinte pacotes: subversion, gfortran, g++, M4, make (já vem no ubuntu), perl (também já vem instalado), zlib, hdf5, netcdf para C, netcdf para fortran e finalmente baixar o COAWST.
 
-Começamos com o básico, abrindo o Terminal e instalado o subversion, gfortra, g++ e o M4.
+# Começamos com o básico, abrindo o Terminal e instalado o subversion, gfortra, g++ e o M4.
 
 sudo apt-get install subversion
 
