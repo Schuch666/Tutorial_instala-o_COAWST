@@ -12,7 +12,7 @@ Tutorial em Português instalação do modelo acoplado COAWST
 
 
 
-MANUAL INSTALAÇÃO DO COAWST
+# MANUAL INSTALAÇÃO DO COAWST
 
 
 
@@ -37,9 +37,10 @@ LFELIPEM@MSN.COM
 
 
 
-Versão 2.0
-Setembro de 2022
-INTRODUÇÃO
+#Versão 3.0
+#Agosto de 2024
+
+#INTRODUÇÃO
 
 O objetivo deste tutorial é ajudar novos usuários a instalar o modelo acoplado COAWST (desenvolvido por John Warner - USGS). A instalação garantirá que usuário possa rodar os casos teste e ter certeza que tudo está correto com a configuração do modelo.
 
@@ -63,7 +64,8 @@ Dica 3: Apareceu um erro??? Lembre-se: GOOGLE É MEU PASTOR E NADA ME
 FALTARÁ.
 
 Bom, chega de papo e vamos começar. 
-1.	INSTALANDO OS COMPONENTES BÁSICOS
+
+#INSTALANDO OS COMPONENTES BÁSICOS
 
 Crie uma pasta /Programas no seu home, é lá que baixaremos e descompactaremos todos os programas. Execute o comando abaixo com o nome de origem do seu home.
 
@@ -108,14 +110,14 @@ sudo update-alternatives --config gfortran
 # o make deve ser 3.8 ou mais recente
 make -v
 
-Caso não houver, install:
+# Caso não houver, install:
 
 sudo apt-get install make
 
 # verifique se o perl está instalado
 perl –v
 
-Instalando a biblioteca zlib:
+# Instalando a biblioteca zlib:
 
 wget http://zlib.net/fossils/zlib-1.2.11.tar.gz
 
@@ -129,7 +131,7 @@ make
 
 sudo make install
 
-Instalando a biblioteca hdf5:
+# Instalando a biblioteca hdf5:
 
 wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
 
@@ -143,8 +145,7 @@ make check install
 
 sudo make install
 
-
-Agora instale o netcdf para C e depois para fortran:
+# Agora instale o netcdf para C e depois para fortran:
 
 wget https://downloads.unidata.ucar.edu/netcdf-c/4.9.0/netcdf-c-4.9.0.tar.gz
 
@@ -158,7 +159,7 @@ make check
 
 sudo make install
 
-Instalação netcdf Fortran
+# Instalação netcdf Fortran
 
 wget https://downloads.unidata.ucar.edu/netcdf-fortran/4.6.0/netcdf-fortran-4.6.0.tar.gz
 
@@ -170,7 +171,7 @@ cd netcdf-fortran-4.6.0/
 
 sudo make install
 
-Agora vamos instalar o MPI (Message Passing Interface) para poder usar o COAWST em paralelo. Eu escolhi utilizar o Open-MPI.
+# Agora vamos instalar o MPI (Message Passing Interface) para poder usar o COAWST em paralelo. Eu escolhi utilizar o Open-MPI.
 
 wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.4.tar.gz
 
@@ -182,7 +183,7 @@ cd openmpi-4.1.4
 
 sudo make install
 
-Instalação do Jasper
+# Instalação do Jasper
 
 wget http://www.ece.uvic.ca/~mdadams/jasper/software/jasper-1.900.1.zip
 
@@ -196,7 +197,7 @@ make
 
 sudo make install
 
-Instalador do pnetcdf
+# Instalador do pnetcdf
 
 wget https://parallel-netcdf.github.io/Release/pnetcdf-1.12.2.tar.gz
 
@@ -210,18 +211,21 @@ make
 
 sudo make install
 
-Se tudo deu certo até agora, vamos baixar a última versão do COAWST usando o subversion, mas para isso você precisa de uma conta no COAWST. Para adquiri-la mande um e-mail para (jcwarner@usgs.gov). Ao usar o svn será necessário usar seu usuário e senha. Escolha um local a seu gosto para instalar o COAWST. Minha dica é um ambiente que não necessite ROOT e seja de fácil acesso (ex: /home/luis/COAWST).
+# Se tudo deu certo até agora, vamos baixar a última versão do COAWST usando o gitclone.
+ 
+# Escolha um local a seu gosto para instalar o COAWST. Minha dica é um ambiente que não necessite ROOT e seja de fácil acesso (ex: /home/luis/COAWST).
 
-1	Download COAWST			
+# Instalar o git
+
+sudo apt-get install git
+
+# Download COAWST			
 				
-2	svn	checkout	--username	seuusername
-	https://coawstmodel.sourcerepo.com/coawstmodel/COAWST	
-		
+git clone https://github.com/DOI-USGS/COAWST.git
 
 Os pré-requitos básicos estão feitos, passamos a configuração do COAWST. Está etapa é apenas um acréscimo do que já foi descrito no manual do COAWST.
 
-Gostaria de acrescentar que possuo algumas manias e atos que podem ser simplificados e feitos de maneira diferente, mas que para o correto funcionamento do modelo acho interessante serem seguidos, pelo menos em primeira estância.
-
+Gostaria de acrescentar que possuo algumas manias e atos que podem ser simplificados e feitos de maneira diferente, mas que para o correto funcionamento do modelo acho interessante serem seguidos, pelo menos em primeira instância.
  
 2 – CONFIGURAÇÃO DO COAWST
 
