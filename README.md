@@ -192,6 +192,20 @@ make
 
 sudo make install
 
+Instalador do pnetcdf
+
+wget https://parallel-netcdf.github.io/Release/pnetcdf-1.12.2.tar.gz
+
+tar -xzvf pnetcdf-1.12.2.tar.gz
+
+cd pnetcdf-1.12.2
+
+./configure --prefix=/usr/local/pnetcdf
+
+make
+
+sudo make install
+
 Se tudo deu certo até agora, vamos baixar a última versão do COAWST usando o subversion, mas para isso você precisa de uma conta no COAWST. Para adquiri-la mande um e-mail para (jcwarner@usgs.gov). Ao usar o svn será necessário usar seu usuário e senha. Escolha um local a seu gosto para instalar o COAWST. Minha dica é um ambiente que não necessite ROOT e seja de fácil acesso (ex: /home/luis/COAWST).
 
 1	Download COAWST			
