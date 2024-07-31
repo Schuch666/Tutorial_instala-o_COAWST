@@ -75,8 +75,6 @@ Começamos com o básico, abrindo o Terminal e instalado o subversion, gfortra, 
 
 sudo apt-get install subversion
 
-sudo apt-get install g++
-
 sudo apt-get install m4
 
 # Por questões práticas as versões do GCC, G++ e gfotran 9 são as mais estáveis para mim e não constuma dar problemas. Por esse motivos instalaremos está versão.
