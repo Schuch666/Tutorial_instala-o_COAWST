@@ -108,6 +108,10 @@ sudo update-alternatives --config gfortran
 # o make deve ser 3.8 ou mais recente
 make -v
 
+Caso não houver, install:
+
+sudo apt-get install make
+
 # verifique se o perl está instalado
 perl –v
 
