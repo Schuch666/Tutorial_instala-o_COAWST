@@ -77,6 +77,8 @@ sudo apt-get install subversion
 
 sudo apt-get install m4
 
+sudo apt-get install curl
+
 # Por questões práticas as versões do GCC, G++ e gfotran 9 são as mais estáveis para mim e não constuma dar problemas. Por esse motivos instalaremos está versão.
 
 sudo aptitude install gcc-9 g++-9 gfortran-9
