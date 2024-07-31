@@ -37,10 +37,10 @@ LFELIPEM@MSN.COM
 
 
 
-#Versão 3.0
-#Agosto de 2024
+# Versão 3.0
+# Agosto de 2024
 
-#INTRODUÇÃO
+# INTRODUÇÃO
 
 O objetivo deste tutorial é ajudar novos usuários a instalar o modelo acoplado COAWST (desenvolvido por John Warner - USGS). A instalação garantirá que usuário possa rodar os casos teste e ter certeza que tudo está correto com a configuração do modelo.
 
