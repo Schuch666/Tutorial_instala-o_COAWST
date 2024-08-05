@@ -205,7 +205,7 @@ tar -xzvf pnetcdf-1.12.2.tar.gz
 
 cd pnetcdf-1.12.2
 
-./configure --prefix=/usr/local/pnetcdf
+./configure --prefix=/usr/local
 
 make
 
