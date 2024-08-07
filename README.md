@@ -81,6 +81,10 @@ sudo apt-get install m4
 
 sudo apt-get install curl
 
+sudo apt-ge install make
+
+sudo apt-get install cmake
+
 # Por questões práticas as versões do GCC, G++ e gfotran 9 são as mais estáveis para mim e não constuma dar problemas. Por esse motivos instalaremos está versão.
 
 sudo apt-get install gcc-9 g++-9 gfortran-9
@@ -106,16 +110,6 @@ sudo update-alternatives --set c++ /usr/bin/g++
 sudo update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-9 40 
 
 sudo update-alternatives --config gfortran
-
-# o make deve ser 3.8 ou mais recente
-make -v
-
-# Caso não houver, install:
-
-sudo apt-get install make
-
-# verifique se o perl está instalado
-perl –v
 
 # Instalando a biblioteca zlib:
 
