@@ -183,7 +183,7 @@ wget http://www.ece.uvic.ca/~mdadams/jasper/software/jasper-1.900.1.zip
 
 unzip jasper-1.900.1.zip
 
-cd jasper-1.900.1.zip
+cd jasper-1.900.1
 
 ./configure --prefix=/usr/local
 
