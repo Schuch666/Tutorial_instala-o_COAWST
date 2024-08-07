@@ -83,8 +83,6 @@ sudo apt-get install curl
 
 sudo apt-get install make
 
-sudo apt-get install cmake
-
 sudo apt-get install csh
 
 # Por questões práticas as versões do GCC, G++ e gfotran 9 são as mais estáveis para mim e não constuma dar problemas. Por esse motivos instalaremos está versão.
