@@ -145,7 +145,7 @@ wget https://downloads.unidata.ucar.edu/netcdf-c/4.9.0/netcdf-c-4.9.0.tar.gz
 
 tar xzf netcdf-c-4.9.0.tar.gz
 
-cd netcdf*
+cd netcdf-c-4.9.0
 
 ./configure --prefix=/usr/local
 
